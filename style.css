@@ -1,0 +1,269 @@
+/* إعدادات الخلفية العامة للموقع والخطوط */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #0b0a0f;
+    color: #ffffff;
+    scroll-behavior: smooth; /* تجعل التنقل بين الأقسام ناعماً */
+}
+
+/* تصميم الهيدر العلوي */
+header {
+    text-align: center;
+    padding: 70px 20px 40px 20px;
+    background: linear-gradient(135deg, #181528 0%, #0b0a0f 100%);
+}
+
+.logo-text {
+    font-size: 3rem;
+    font-weight: 900;
+    color: #8b5cf6;
+    letter-spacing: 2px;
+    text-shadow: 0px 0px 20px rgba(139, 92, 246, 0.6);
+    margin-bottom: 10px;
+}
+
+header h1 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #f3f4f6;
+}
+
+.server-ip {
+    margin-top: 20px;
+    background: #1e1b33;
+    padding: 12px 25px;
+    display: inline-block;
+    border-radius: 8px;
+    border: 1px solid #4c1d95;
+    font-weight: bold;
+}
+
+.server-ip span {
+    color: #a78bfa;
+}
+
+/* شريط التنقل السريع بين الأقسام */
+.shop-nav {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    padding: 15px;
+    background: #13111c;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-top: 2px solid #8b5cf6;
+    border-bottom: 2px solid #8b5cf6;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+}
+
+.shop-nav a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 8px 20px;
+    background: #1e1b33;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 0.95rem;
+    transition: all 0.2s ease;
+    border: 1px solid #312e52;
+}
+
+.shop-nav a:hover {
+    background: #8b5cf6;
+    border-color: #a78bfa;
+    transform: translateY(-2px);
+}
+
+/* عناوين الأقسام الرئيسية */
+.section-title {
+    text-align: center;
+    margin-top: 50px;
+    padding: 10px;
+}
+
+.section-title h2 {
+    font-size: 1.8rem;
+    color: #a78bfa;
+    display: inline-block;
+    border-bottom: 2px solid #4c1d95;
+    padding-bottom: 10px;
+}
+
+/* الحاوية وتوزيع كروت الرتب والمشتريات */
+.store-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* تصميم الكروت الافتراضية */
+.card {
+    background: #13111c;
+    border: 1px solid #231f38;
+    border-radius: 16px;
+    width: 310px;
+    padding: 35px 25px;
+    text-align: center;
+    position: relative;
+    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* تمييز الكروت الأسطورية (Premium) */
+.card.premium {
+    border: 2px solid #fbbf24;
+    background: #1a1614;
+    box-shadow: 0px 0px 25px rgba(251, 191, 36, 0.15);
+}
+
+.card.premium .price, .card.premium h2 {
+    color: #fbbf24;
+}
+
+.card.premium .buy-btn {
+    background: #fbbf24;
+    color: #1a1614;
+}
+
+.card.premium .buy-btn:hover {
+    background: #d97706;
+}
+
+/* شارات التمييز فوق الكروت */
+.badge-best {
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #8b5cf6;
+    color: #ffffff;
+    padding: 6px 18px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(139, 92, 246, 0.4);
+}
+
+.card.premium .badge-best {
+    background: #fbbf24;
+    color: #000000;
+    box-shadow: 0 4px 10px rgba(251, 191, 36, 0.4);
+}
+
+/* الأسعار والمميزات */
+.price {
+    font-size: 2.3rem;
+    font-weight: bold;
+    color: #a78bfa;
+    margin: 25px 0;
+}
+
+.price span {
+    font-size: 1rem;
+    color: #6b7280;
+}
+
+.features {
+    list-style: none;
+    padding: 0;
+    text-align: right;
+    margin-bottom: 35px;
+    min-height: 140px;
+}
+
+.features li {
+    margin: 14px 0;
+    color: #d1d5db;
+    font-size: 0.95rem;
+    line-height: 1.4;
+}
+
+/* أزرار الشراء المتوجهة للديسكورد */
+.buy-btn {
+    display: block;
+    background: #8b5cf6;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 14px;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: all 0.2s ease;
+}
+
+.buy-btn:hover {
+    background: #7c3aed;
+    transform: scale(1.02);
+}
+
+/* قسم طرق الدفع */
+.payment-methods {
+    max-width: 800px;
+    margin: 60px auto;
+    background: #13111c;
+    border: 1px solid #231f38;
+    border-radius: 16px;
+    padding: 30px;
+    text-align: center;
+}
+
+.payment-methods h3 {
+    color: #a78bfa;
+    margin-top: 0;
+    font-size: 1.4rem;
+}
+
+.methods-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 25px 0;
+}
+
+.method-item {
+    background: #1e1b33;
+    border: 1px solid #312e52;
+    padding: 15px 25px;
+    border-radius: 10px;
+    min-width: 150px;
+}
+
+.method-icon {
+    font-size: 2rem;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.method-item p {
+    margin: 0;
+    font-weight: bold;
+    font-size: 0.95rem;
+    color: #e5e7eb;
+}
+
+.payment-note {
+    color: #9ca3af;
+    font-size: 0.85rem;
+    line-height: 1.5;
+}
+
+/* تذييل الصفحة */
+footer {
+    text-align: center;
+    padding: 40px 20px;
+    color: #4b5563;
+    font-size: 0.9rem;
+    border-top: 1px solid #13111c;
+}
